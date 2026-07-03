@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDA Audit Report - Global_Enterprise_Tech_Sales_Sample.csv</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      background-color: #f9fafb;
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e5e7eb;
+      padding: 40px;
+    }
+    .header {
+      border-bottom: 2px solid #ec4899;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #111827;
+      letter-spacing: -0.5px;
+    }
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .meta-card {
+      background: #fdf2f8;
+      border: 1px solid #fbcfe8;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+    .meta-card.green {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+    }
+    .meta-card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #111827;
+    }
+    .meta-card p {
+      margin: 5px 0 0 0;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #6b7280;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 13px;
+    }
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    th {
+      background: #f3f4f6;
+      color: #374151;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+    }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 35px;
+    }
+    .section-title {
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      color: #111827;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Exploratory Data Analysis (EDA) Report</h1>
+      <p style="margin: 5px 0 0 0; color: #6b7280; font-size: 14px;">
+        Dataset File Name: <strong>Global_Enterprise_Tech_Sales_Sample.csv</strong> | Processed: 7/3/2026
+      </p>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-card">
+        <h3>15</h3>
+        <p>Total Rows</p>
+      </div>
+      <div class="meta-card green">
+        <h3>8</h3>
+        <p>Total Columns</p>
+      </div>
+      <div class="meta-card">
+        <h3>0</h3>
+        <p>Duplicate Rows</p>
+      </div>
+      <div class="meta-card green">
+        <h3>141.6 KB</h3>
+        <p>Calculated Footprint</p>
+      </div>
+    </div>
+
+    <h2 class="section-title">Column Properties & Statistical Audit</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Column Name</th>
+          <th>Type</th>
+          <th>Unique Count</th>
+          <th>Missing Values</th>
+          <th>Mean (μ)</th>
+          <th>Std Dev (σ)</th>
+          <th>Outliers</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">Date</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">datetime</td>
+        <td>15</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">Country</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">categorical</td>
+        <td>4</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">Segment</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">categorical</td>
+        <td>3</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">Category</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">categorical</td>
+        <td>4</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>N/A</td>
+        <td>N/A</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">Sales</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">numeric</td>
+        <td>15</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>35,626.667</td>
+        <td>14,573.879</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">MarginPercent</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">numeric</td>
+        <td>15</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>61.4</td>
+        <td>18.896</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">CustomerRating</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">numeric</td>
+        <td>11</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>4.42</td>
+        <td>0.288</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      <tr>
+        <td style="font-family: monospace; color: #db2777; font-weight: bold;">GrowthRate</td>
+        <td style="text-transform: uppercase; font-size: 11px; font-weight: bold;">numeric</td>
+        <td>15</td>
+        <td style="color: #059669; font-weight: bold;">
+          0 (0%)
+        </td>
+        <td>13.533</td>
+        <td>5.691</td>
+        <td style="color: #6b7280;">
+          0
+        </td>
+      </tr>
+    
+      </tbody>
+    </table>
+
+    <div class="grid-2">
+      <div>
+        <h2 class="section-title" style="color: #db2777;">Executive AI Conclusions</h2>
+        
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #fdf2f8; border: 1px solid #fbcfe8; color: #db2777; font-weight: bold; flex-shrink: 0;">1</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">The dataset is restricted to an extremely small sample of 15 records spanning a six-month window in 2026, which introduces significant risk of sampling bias and limits its utility for robust predictive modeling or strategic forecasting.</p>
+      </div>
+    
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #fdf2f8; border: 1px solid #fbcfe8; color: #db2777; font-weight: bold; flex-shrink: 0;">2</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">There is high dispersion in profitability, with profit margins ranging widely from 30% to 85% (average 61.4%), signaling structurally distinct cost profiles and pricing power across categories like SaaS, Cloud, and Hardware.</p>
+      </div>
+    
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #fdf2f8; border: 1px solid #fbcfe8; color: #db2777; font-weight: bold; flex-shrink: 0;">3</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">Customer sentiment and sales momentum are structurally strong, evidenced by a high average customer rating of 4.42 and positive growth rates across all records, averaging 13.5% with zero negative growth outliers.</p>
+      </div>
+    
+      </div>
+      <div>
+        <h2 class="section-title" style="color: #059669;">Strategic Recommendations</h2>
+        
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #ecfdf5; border: 1px solid #a7f3d0; color: #059669; font-weight: bold; flex-shrink: 0;">1</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">Establish a continuous data pipeline to expand this transaction database beyond the 15-record sample, enabling statistically significant cohort analyses across countries, segments, and product categories.</p>
+      </div>
+    
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #ecfdf5; border: 1px solid #a7f3d0; color: #059669; font-weight: bold; flex-shrink: 0;">2</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">Implement a margin optimization initiative that targets product categories yielding near the 30% minimum, transitioning them toward value-based pricing or bundle strategies with high-margin (85%) software-driven offerings.</p>
+      </div>
+    
+      <div style="display: flex; gap: 15px; margin-bottom: 12px; font-size: 14px;">
+        <span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #ecfdf5; border: 1px solid #a7f3d0; color: #059669; font-weight: bold; flex-shrink: 0;">3</span>
+        <p style="margin: 0; line-height: 1.5; color: #374151;">Institutionalize a formal Customer Advocacy Program to leverage the high satisfaction levels (median 4.5 rating) into structured case studies, referenceable accounts, and systematic cross-selling.</p>
+      </div>
+    
+      </div>
+    </div>
+
+    <div style="margin-top: 40px; text-align: center; font-size: 11px; color: #9ca3af; border-top: 1px solid #e5e7eb; padding-top: 20px;">
+      Report automatically generated by Exploratory Data Analysis AI Suite - Google AI Studio Build.
+    </div>
+  </div>
+</body>
+</html>
+    
